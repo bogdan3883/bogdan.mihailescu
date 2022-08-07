@@ -56,12 +56,12 @@ table {
 }
 
 :root {
-    --clr-primary: #0a0a0b;
+    --clr-primary: rgb(10, 10, 11);
     --clr-primary-shade: #252939;
     --clr-secondary: rgb(33, 91, 240);
     --clr-secondary-shade: rgb(62, 111, 236);
     --clr-white: #ffffff;
-    --clr-black: #000000;
+    --clr-black: rgb(0, 0, 0);
     --clr-grey: #666666;
 }
 
@@ -293,7 +293,7 @@ body {
 /* skills-start */
 
 .skills {
-	background-color: var(--clr-primary-shade);
+	background-color: rgba(10, 10, 11, 0.9);
 	border-radius: 24px;
 }
 
@@ -304,15 +304,26 @@ body {
 }
 
 .card {
-	font-size: 24px;
+	font-size: 18px;
 	font-weight: 400;
 	color: var(--clr-primary);
 	font-family: Arial, Helvetica, sans-serif;
 	align-items: center;
 	background-color: rgb(220, 220, 220);
+	border-radius: 24px;
+}
+
+.card-text {
+	padding: 5px;
+}
+
+.card-title {
+	padding: 20px;
+	font-weight: 700;
+	font-size: 20px;
 }
 
 .card-img-top {
-	height: 230px;
-	width: auto;
+	height: 30vh;
+	width: 18rem;
 }
