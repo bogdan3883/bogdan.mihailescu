@@ -1,5 +1,7 @@
 const primaryNav = document.querySelector(".primary-navigation");
 const navToggle = document.querySelector(".mobile-nav-toggle");
+const btnScrollToTop = document.querySelector("#btnScrollToTop");
+
 
 navToggle.addEventListener("click", (event) => {
     const visibility = primaryNav.getAttribute("data-visible")
@@ -11,4 +13,21 @@ navToggle.addEventListener("click", (event) => {
         primaryNav.setAttribute("data-visible", false)
         navToggle.setAttribute("aria-expanded", false)
     }
+});
+
+window.onscroll = function() {
+    scrollFunction()
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        btnScrollToTop.style.display = "block";
+    } else {
+        btnScrollToTop.style.display = "none";
+    }
+}
+
+btnScrollToTop.addEventListener("click", function() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 });
