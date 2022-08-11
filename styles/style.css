@@ -416,6 +416,11 @@ body {
 	padding-right: 20px;
 }
 
+.connect i:hover {
+	transition: 0.2s ease-in;
+	color: var(--clr-secondary);
+}
+
 /* contact-end */
 
 
