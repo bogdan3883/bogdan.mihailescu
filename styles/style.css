@@ -88,6 +88,7 @@ body {
 	position: fixed;
 	width: 100%;
 	top: 0;
+	z-index: 1;
 	
 }
 
@@ -148,11 +149,11 @@ body {
 	.primary-navigation {
 		font-size: 24px;
 		gap: 3em;
-		z-index: 1000;
+		z-index: 1;
 		position: fixed;
 		inset: 0 0 0 30%;
 		background: hsl(0 0% 100% / 0.1);
-		backdrop-filter: blur(3rem);
+		backdrop-filter: blur(8rem);
 		flex-direction: column;
 		padding: min(30vh, 10rem) 2em;
 		transform: translateX(100%);
@@ -193,20 +194,39 @@ body {
 
 /* nav-end */
 
-.showcase {
+
+/* about-start */
+
+.about {
 	font-family: 'Roboto', sans-serif;
 }
 
-.showcase h1{
-	font-size: 3rem;
-	font-weight: 700;
+.about h1 {
 	margin-top: 150px;
-	/* position: absolute; */
-	/* z-index: 300;
-	margin-top: 150px; */
+	text-decoration: none;
+	color: var(--clr-white);
+	transition: 0.3s;
+	padding: 5px;		
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
 }
 
-.showcase p{
+.about h1 > span {
+	font-weight: 700;
+	margin-inline-end: .75em;
+	color: var(--clr-secondary);
+}
+
+.about h2{
+	font-size: 3rem;
+	font-weight: 700;
+	margin-top: 50px;
+}
+
+.about p{
 	font-size: 1.5rem;
 	font-weight: 500;
 	letter-spacing: 1px;
@@ -214,6 +234,12 @@ body {
 	color: #f5f5f5;
 }
 
+/* .about img {
+	height: 150px;
+	width: auto;
+} */
+
+/* 
 .animation {
 	opacity: 10%;
 	display: flex;
@@ -222,14 +248,14 @@ body {
 	position: relative;
 	height: auto;
 	max-width: 100%;
-}
+} */
 
-.glitch {
+/* .glitch {
 	font-size: 4rem;
 	text-shadow:0.02em 1 0 rgba(240, 78, 33, 0.75),
 				-0.05em -0.025em 0 rgba(62, 111, 236, 0.75),
     			0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
-}
+} */
 
 /* .glitch:hover {
 	animation: glitch 200ms infinite;
@@ -273,10 +299,8 @@ body {
 	}
 } */
 
-.showcase img {
-	height: 150px;
-	width: auto;
-}
+/* about-end */
+
 
 /* skills-start */
 
@@ -307,17 +331,17 @@ body {
 .card {
 	font-size: 20px;
 	font-weight: 500;
-	color: var(--clr-primary);
+	color: var(--clr-white);
 	font-family: Arial, Helvetica, sans-serif;
 	align-items: center;
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(50, 50, 50);
 	border-radius: 24px;
 	transition-duration: 0.3s;
 	
 }
 
 .card:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 
 .card-text {
@@ -332,9 +356,12 @@ body {
 
 .card-img-top {
 	height: 23vh;
-	width: 16rem;
-	border-bottom: 2px solid var(--clr-primary);
+	max-width: 16rem;
+	border-bottom: 2px solid var(--clr-white);
+	min-width: auto;
 }
+
+/* skills-end */
 
 /* scroll-to-top-button start */
 
@@ -360,6 +387,9 @@ body {
 	color: var(--clr-white);
 }
 
+/* scroll-to-top-button-end */
+
+
 /* contact-start */
 
 .contact {
@@ -384,6 +414,12 @@ body {
 	text-decoration: none;
 }
 
+.contact p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .contact h1 > span {
 	font-weight: 700;
 	margin-inline-end: .75em;
@@ -400,15 +436,20 @@ body {
 	font-weight: 700;
 }
 
+.contact p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
-.connect a{
+.connect a {
 	text-decoration: none;
 	color: var(--clr-white);
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 18px;
 	display: flex;
 	align-items: center;
-	padding: 10px;
+	padding: 10px 0 10px 0;
 	
 }
 
@@ -417,13 +458,14 @@ body {
 	padding-right: 20px;
 }
 
-.connect i:hover {
+.connect li:hover i {
 	transition: 0.2s ease-in;
 	color: var(--clr-secondary);
 }
 
 form ul li {
 	width: 100%;
+	min-width: auto;
 	height: 100%;
 	display: flex;
 	justify-content: center;
@@ -445,6 +487,7 @@ form ul li input {
 }
 
 form ul li textarea {
+	min-height: 130px;
 	width: 80%;
 	padding: 10px;
 	background-color: transparent;
@@ -486,6 +529,7 @@ ul button:hover {
 /* contact-end */
 
 
+
 /* footer-start*/
 
 .footer {
@@ -506,3 +550,44 @@ ul button:hover {
 }
 
 /* footer-end */
+
+
+/* thank-you-start */
+
+.thankYou {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: var(--clr-white);
+	font-family: 'Roboto', sans-serif;
+	padding-top: 200px;
+}
+
+.thankYou h1{
+	font-size: 60px;
+	padding: 30px;
+	font-weight: 700;
+}
+
+.thankYou h2{
+	font-size: 40px;
+	padding: 30px;
+}
+
+.thankYou button {
+	padding: 30px;
+	border-radius: 20px;
+	background-color: transparent;
+	border: 2px solid var(--clr-secondary);
+	color: var(--clr-secondary);
+	font-size: 24px;
+	transition: 0.2s ease-in;
+}
+
+.thankYou button:hover {
+	background-color: var(--clr-secondary-shade);
+	color: var(--clr-white);
+}
+
+/* thank-you-end */
