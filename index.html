@@ -66,13 +66,9 @@
         </p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non et, dolore nisi minima sequi aliquam ratione repellat voluptatum natus numquam tempora iste consequuntur nostrum at possimus pariatur nihil delectus eos voluptatibus labore tempore iure! Eum et repudiandae mollitia obcaecati architecto in explicabo molestias quaerat, delectus autem. Perferendis fuga delectus hic! Magnam repellendus eius aliquam minima similique accusantium libero explicabo natus blanditiis animi hic totam cum veritatis facilis, cupiditate rerum. Asperiores voluptate iste doloribus voluptatum quas nisi accusamus laborum quidem fugiat repellendus, sit autem enim voluptas, provident pariatur, ea optio aperiam eveniet maxime labore? Modi, quisquam distinctio doloremque nulla perspiciatis, vero porro fugiat voluptate tempore sunt magnam. Soluta aliquam pariatur animi commodi alias asperiores totam earum facere enim doloremque repellendus illum quaerat reprehenderit neque, consequatur voluptates dolor corporis repellat laboriosam fuga nesciunt maxime mollitia delectus. Beatae eaque vel culpa aliquam nesciunt officiis sed perferendis natus consequatur consectetur illo officia dolores, aut at mollitia fugit? Alias ratione soluta ex repudiandae aperiam, cupiditate doloribus labore. Alias quos, et quo maxime eos accusantium aspernatur voluptas tenetur asperiores libero minima quibusdam illum iusto? Dolor accusantium incidunt amet, vitae repellat deserunt esse, porro delectus dolore eaque fugiat voluptatibus, excepturi suscipit nisi nemo officiis ab quos sit ullam id voluptate odio natus pariatur! Quas facere vero enim, ratione exercitationem totam molestiae, maxime nisi error assumenda voluptatibus magni praesentium temporibus sit alias recusandae unde sapiente. Id fuga corporis dolore adipisci modi facilis incidunt libero dolorem debitis. Modi earum quod possimus consectetur commodi ducimus ea! Natus eaque beatae ipsam quia animi sit minus nesciunt neque, perferendis facilis, itaque hic doloremque maxime iusto, modi enim ex maiores omnis a repellendus! Culpa repudiandae inventore tempore, animi atque facere. Nobis blanditiis asperiores aliquid quis necessitatibus inventore deserunt provident, consequuntur eaque perspiciatis ipsa commodi, alias vero, temporibus at autem molestias possimus consequatur? In.</p>
         </div>
-        <!-- <div class="animation">
-            <img src="./images/animation.gif" alt="">
-        </div>  
-    </div> -->
 </section>
 
-    <section id="#skills" class="skills container p-5">
+    <section id="#skills" class="skills container p-5 mt-5">
         <h1 class="pb-4"><span>.02</span>skills</h1>
             <div class="container m-0 p-0 text-center row">
                 <div class="col d-flex justify-content-center p-3">
@@ -115,34 +111,38 @@
             </div>
     </section>
 
-    <section class="contact container p-5">
+    <section class="contact container pt-5 mt-5">
         <h1><span>.04</span>contact</h1>
         <h2>Get in touch</h2>
         <p class="d-flex justify-content-center pt-5 pb-2">Have a project in mind or just want to say hi?</p>
         <p class="d-flex justify-content-center pb-5">Feel free to send me a message!</p>
-        <div class="row container p-5">
-        <div class="form container col">
-            <form>
-                <div class="input-group">
-                    <input type="text" id="name" required>
-                    <label for="name">Name</label>
-                </div>
-                <div class="input-group">
-                    <input type="text" id="number" required>
-                    <label for="number">Tel</label>
-                </div>
-                <div class="input-group">
-                    <input type="email" id="email" required>
-                    <label for="email">Email</label>
-                </div>
-                <div class="input-group">
-                    <textarea name="message" id="message" rows="8"></textarea>
-                    <label for="message">Message</label>
-                </div>
-                <button type="submit">submit</button>
+        <div class="row container p-0 m-0">
+        <div class="form container col py-5">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <ul>
+                <li class="input-group">
+                    <input type="text" placeholder="Name" id="name" required>
+                    <label for="name"></label>
+                </li>
+                <li class="input-group">
+                    <input type="text" placeholder="Tel" id="number" required>
+                    <label for="number"></label>
+                </li>
+                <li class="input-group">
+                    <input type="email" placeholder="Email" id="email" required>
+                    <label for="email"></label>
+                </li>
+                <li class="input-group">
+                    <textarea name="message" placeholder="Messsage" id="message" rows="6"></textarea>
+                    <label for="message"></label>
+                </li>
+                <li>
+                <button type="submit">Send</button>
+            </li>
+            </ul>
             </form>
         </div>
-        <div class="connect container col">
+        <div class="connect container col py-5">
             <ul>
                 <li>
                     <a href="mailto:bogdan.mihailescu38@gmail.com">
@@ -176,6 +176,7 @@
             <p>&copy; Bogdan Mihailescu 2022</p>
         </div>
     </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="/scripts/script.js"></script>
 </body>
 </html>

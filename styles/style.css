@@ -105,7 +105,7 @@ body {
 	padding: 2rem;
 	margin: 0;
 	background: hsl(0 0% 100% / 0.1);
-	backdrop-filter: blur(1rem);
+	backdrop-filter: blur(2rem);
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -356,7 +356,7 @@ body {
 }
 
 .btnScrollToTop:hover {
-	background-color: var(--clr-secondary);
+	background-color: var(--clr-secondary-shade);
 	color: var(--clr-white);
 }
 
@@ -400,6 +400,7 @@ body {
 	font-weight: 700;
 }
 
+
 .connect a{
 	text-decoration: none;
 	color: var(--clr-white);
@@ -408,7 +409,7 @@ body {
 	display: flex;
 	align-items: center;
 	padding: 10px;
-
+	
 }
 
 .connect i {
@@ -421,6 +422,67 @@ body {
 	color: var(--clr-secondary);
 }
 
+form ul li {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 24px;
+	
+}
+
+form ul li:nth-of-type(1){
+	padding-top: 10px;
+}
+form ul li input {
+	
+	width: 80%;
+	padding: 10px;
+	background-color: transparent;
+	border: 1px solid white;
+	color: var(--clr-white);
+}
+
+form ul li textarea {
+	width: 80%;
+	padding: 10px;
+	background-color: transparent;
+	border: 1px solid white;
+	color: var(--clr-white);
+}
+
+.input-group {
+	
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	
+}
+
+ul button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 12px 28px 12px 28px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	background-color: transparent;
+	transition: 0.3s ease-in;
+	color: var(--clr-secondary);
+	border: 2px solid var(--clr-secondary);
+	margin-top: 10px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	border-radius: 3px;
+	
+}
+
+ul button:hover {
+	background-color: var(--clr-secondary-shade);
+	color: var(--clr-white);
+	font-weight: 700;
+}
 /* contact-end */
 
 
