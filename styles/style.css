@@ -71,6 +71,8 @@ body {
 	overflow-x: hidden;
 }
 
+
+
 /* header-start*/
 
 .primary-header img {
@@ -209,7 +211,7 @@ body {
 	padding: 5px;		
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 500;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
 }
@@ -311,7 +313,7 @@ body {
 	padding: 5px;		
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 500;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
 }
@@ -363,6 +365,40 @@ body {
 
 /* skills-end */
 
+/* work-start */
+
+.work {
+	background-color: rgba(27, 27, 29, 0.9);
+	border-radius: 24px;
+}
+
+.work h1 {
+	text-decoration: none;
+	color: var(--clr-white);
+	transition: 0.3s;
+	padding: 5px;		
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+}
+
+.work h1 > span {
+	font-weight: 700;
+	margin-inline-end: .75em;
+	color: var(--clr-secondary);
+}
+
+.work img {
+	height: 500px;
+	width: 500px;
+
+}
+
+
+/* work-end */
+
 /* scroll-to-top-button start */
 
 .btnScrollToTop {
@@ -408,7 +444,7 @@ body {
 	padding: 5px;		
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 500;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
 	text-decoration: none;

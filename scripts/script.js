@@ -3,9 +3,11 @@ const navToggle = document.querySelector(".mobile-nav-toggle");
 const btnScrollToTop = document.querySelector("#btnScrollToTop");
 
 function goBack() {
-    window.history.back();
+    window.location.replace("index.html")
 }
-
+// function reloadPage() {
+//     location.reload();
+// }
 
 navToggle.addEventListener("click", (event) => {
     const visibility = primaryNav.getAttribute("data-visible")
