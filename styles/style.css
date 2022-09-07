@@ -393,17 +393,17 @@ body {
 .work button a {
 	text-decoration: none;
 	color: var(--clr-white);
-	padding-top: 10px;
+	/* padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 63px;
-	padding-right: 63px;
+	padding-right: 63px; */
 }
 
 .work button {
 	background-color: var(--clr-secondary);
 	border: 2px solid var(--clr-secondary);
 	border-radius: 3px;
-	
+	padding: 10px;
 	margin-top: 10px;
 	width: 100%;
 	display: flex;
